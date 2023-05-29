@@ -1,0 +1,26 @@
+@import '../../../../../variable';
+
+.wrapper {
+  display: flex;
+  padding: 20px 250px;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -10px 10px -10px;
+
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .contact {
+    text-decoration: none;
+
+
+    .contact-link {
+      margin-left: 20px;
+    }
+  }
+}

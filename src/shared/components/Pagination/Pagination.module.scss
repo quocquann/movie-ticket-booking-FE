@@ -1,0 +1,34 @@
+@import '../../../variable';
+
+.wrapper {
+  display: flex;
+  border: 1px solid $primary-color;
+  width: fit-content;
+
+  .page-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    &.hide {
+      display: none;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: #fff;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $primary-color;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}

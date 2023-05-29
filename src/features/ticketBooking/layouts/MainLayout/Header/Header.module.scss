@@ -1,0 +1,47 @@
+@import '../../../../../variable';
+
+.wrapper {
+  //background-color: $primary-color;
+  padding: 20px 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 10px -10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+
+
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: $primary-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .nav {
+    margin-left: 60px;
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .nav-link {
+      text-decoration: none;
+      color: #111;
+      margin-right: 30px;
+
+      &:hover {
+        color: $primary-color
+      }
+    }
+  }
+
+  .userName {
+    margin-right: 20px;
+  }
+
+}

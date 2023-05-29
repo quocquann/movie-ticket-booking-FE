@@ -1,0 +1,45 @@
+@import '../../../../variable';
+
+.wrapper {
+  padding: 90px 250px;
+  // height: 100%;
+  display: flex;
+
+  .poster {
+    width: 303px;
+    height: 430px;
+    border-radius: 4px;
+  }
+
+  .infor {
+    margin-left: 40px;
+    width: 700px;
+
+
+
+    .movie-name {
+      font-weight: 700;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 25px;
+      color: $primary-color
+    }
+
+    .desciption {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+  }
+}

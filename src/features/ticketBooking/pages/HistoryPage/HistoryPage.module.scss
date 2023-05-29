@@ -1,0 +1,30 @@
+@import '../../../../variable';
+
+
+.wrapper {
+  padding: 90px 250px;
+  // height: 100%;
+
+  .title {
+    padding-left: 10px;
+    border-left: 8px solid $primary-color;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .table {
+    border: 1px solid $border-color-base;
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+      border: 1px solid $border-color-base;
+      border-collapse: collapse;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+  }
+}

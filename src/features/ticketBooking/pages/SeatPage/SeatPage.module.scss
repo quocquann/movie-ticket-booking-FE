@@ -1,0 +1,69 @@
+@import '../../../../variable';
+
+.wrapper {
+  padding: 90px 250px;
+
+  .screen {
+    background-color: $primary-color;
+    width: 700px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 80px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .bill {
+    // background-color: $primary-color;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .movie-name {
+      font-weight: 700;
+      font-size: 30px;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    .cinema,
+    .room,
+    .date,
+    .time {
+      margin-bottom: 10px;
+    }
+
+
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      .seats,
+      .quantity {
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 30px;
+        color: $primary-color;
+      }
+
+      .btn-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: end;
+      }
+    }
+  }
+}
