@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames/bind'
 import styles from './DetailPage.module.scss'
 import Button from '../../../../shared/components/Button/Button'
-import { Movie } from '../../models/interface'
 import { Link, useParams } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../../../../redux/hooks'
 import { getMovieByIdThunk } from '../../service/states/actions'
@@ -26,7 +25,7 @@ const DetailPage: React.FC = () => {
 
   return (
     <div className={cx('wrapper')}>
-      <img className={cx('poster')} src={`http://localhost:3001/img/${Anh}`} alt="poster" />
+      <img className={cx('poster')} src={`${process.env.REACT_APP_BASE_URL}img/${Anh}`} alt="poster" />
       <div className={cx('infor')}>
         <p className={cx('movie-name')}>{TenPhim}</p>
         <div className={cx('detail')}>

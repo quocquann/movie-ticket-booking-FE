@@ -13,7 +13,7 @@ const MovieItem: React.FC<MovieProps> = ({ movie }) => {
   const { TenPhim, ThoiGianKhoiChieu, ThoiLuong, DaoDien, MaPhim} = movie
   return (
     <div className={cx('wrapper')}>
-      <img className={cx('poster')} src={`http://localhost:3001/img/${movie.Anh}`} />
+      <img className={cx('poster')} src={`${process.env.REACT_APP_BASE_URL}img/${movie.Anh}`} alt='img'/>
       <div className={cx('infor')}>
         <div className={cx('top')}>
           <Link className={cx('movie-name')} to={`/detail/${MaPhim}`}>{ TenPhim }</Link>
